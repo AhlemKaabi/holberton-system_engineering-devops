@@ -1,1 +1,0 @@
-this a README.md for the shell basics directory
