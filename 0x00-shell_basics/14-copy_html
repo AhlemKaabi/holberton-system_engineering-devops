@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u *.html Desktop/holberton-system_engineering-devops/0x00-shell_basics
+cp *.html Desktop/holberton-system_engineering-devops/0x00-shell_basics
