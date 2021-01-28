@@ -1,1 +1,1 @@
-THIS IS A READ ME FOR THE TO DIRECTORY
+this is a readme file for to 
