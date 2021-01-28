@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod ng+x o+r hello
+chmod ng+xo+r hello
