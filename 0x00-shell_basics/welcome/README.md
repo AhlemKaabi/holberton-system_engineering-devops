@@ -1,1 +1,1 @@
-this is a readme file for the welcome directory
+this is a readme file for welcome
