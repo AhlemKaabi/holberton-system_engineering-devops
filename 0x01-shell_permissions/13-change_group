@@ -1,2 +1,2 @@
 #!/bin/bash
-groups hello holberton
+chgrp holberton hello
