@@ -1,2 +1,2 @@
 #!/bin/bash
-chown betty:holberton ls -s __hello
+chown betty:holberton ln -s __hello
