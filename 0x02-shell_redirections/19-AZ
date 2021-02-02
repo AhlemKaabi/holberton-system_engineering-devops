@@ -1,0 +1,2 @@
+#!/bin/bash
+eco "$string" |tr 'A' 'c'| tr 'Z' 'e'
