@@ -1,2 +1,2 @@
 #!/bin/bash
-cut \home /etc/passwd
+cat /etc/passwd | grep "$find_user"
