@@ -1,4 +1,4 @@
-# SHELL Basics
+# Shell Basics
 
 [Project-based learning](https://en.wikipedia.org/wiki/Project-based_learning), to learn the basics of the Shell
 
