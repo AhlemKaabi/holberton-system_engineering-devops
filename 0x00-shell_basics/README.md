@@ -1,5 +1,5 @@
+# SHELL Basics
 
-    What is the shell
-    What is the difference between a terminal and a shell
-    What is the shell prompt
-    How to use the history (the basics)
+[Project-based learning](https://en.wikipedia.org/wiki/Project-based_learning), to learn the basics of the Shell
+
+Project for [holberton school](https://www.holbertonschool.com/tn/en/).
