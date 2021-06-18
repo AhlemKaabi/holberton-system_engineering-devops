@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
-for i in $(ls)
+for i in *
 do
+	[[ -e "$i" ]] || break # handle the case of no files
 	echo "$i" | cut -d"-" -f2
 done
