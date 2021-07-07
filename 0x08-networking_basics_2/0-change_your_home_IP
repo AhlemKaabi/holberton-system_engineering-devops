@@ -3,5 +3,5 @@
 cp /etc/hosts ~/hosts.new
 sed -i "s/127.0.0.1/127.0.0.2/" ~/hosts.new
 # https://doc.ubuntu-fr.org/sed
-echo -e "8.8.8.8 \tfacebook.com" | sudo tee -a ~/hosts.new
+echo -e "8.8.8.8 \tfacebook.com" >> ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
