@@ -2,5 +2,5 @@
 # Bash script that configures an Ubuntu server with the below requirements.
 cp /etc/hosts ~/hosts.new
 sed '1 s/^.*$/127.0.0.2\tlocalhost/' -i ~/hosts.new
-echo -e "8.8.8.8 \tfacebook.com" | sudo tee -a /etc/hosts
+echo -e "8.8.8.8 \tfacebook.com" | sudo tee -a ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
