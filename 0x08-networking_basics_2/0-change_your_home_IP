@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that configures an Ubuntu server with the below requirements.
 cp /etc/hosts ~/hosts.new
-sed '1 s/^.*$/127.0.0.2\tlocalhost/' -i ~/hosts.new
+sed "s/127.0.0.1/127.0.0.2\tlocalhost/" -i ~/hosts.new
+# https://doc.ubuntu-fr.org/sed
 echo -e "8.8.8.8 \tfacebook.com" | sudo tee -a ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
