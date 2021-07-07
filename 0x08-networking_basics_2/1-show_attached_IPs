@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Bash script that displays all active IPv4 IPs on
 # the machine it’s executed on.
-hostname -I
+ifconfig | awk -F "[: ]+" '/inet addr:/ { if ($4 != "127.0.0.1") print $4 }'
