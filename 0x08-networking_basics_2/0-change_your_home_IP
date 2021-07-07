@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# Bash script that configures an Ubuntu server with the below requirements.
 sed '1 s/^.*$/127.0.0.2\tlocalhost/' -i /etc/hosts
 echo -e "8.8.8.8 \tfacebook.com" | sudo tee -a /etc/hosts
