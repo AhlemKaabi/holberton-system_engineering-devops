@@ -1,0 +1,12 @@
+#Accepts 4 parameters:
+#    The path to the file to be transferred
+#    The IP of the server we want to transfer the file to
+#    The username scp connects with
+#    The path to the SSH private key that scp uses
+# !!!!!!    That is one way of publishing your website pages to your server. !!!!!!!
+
+if [ "$#" -ne 4 ]; then
+	echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+else
+	scp some_page.html ubuntu@34.139.6.234:~/
+fi
