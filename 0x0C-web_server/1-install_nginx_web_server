@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# command line to intall nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw app list
+sudo ufw enable
+sudo ufw allow 'Nginx HTTPS'
+sudo ufw allow 'Nginx HTTP'
+sudo ufw allow 'Nginx Full'
+sudo ufw status
