@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # install and configure HAproxy on your lb-01 server.
 sudo apt -y install haproxy
-sudo tee -a /etc/haproxy/haproxy.cfg <<EOT
+sudo tee -a /etc/haproxy/haproxy.cfg > /dev/null <<EOT
 frontend http_web
     bind *:80
     default_backend rgw
