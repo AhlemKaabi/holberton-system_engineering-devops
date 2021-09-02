@@ -10,3 +10,4 @@ backend rgw
     server  rgw1 34.139.171.141:80 check
     server  rgw2 104.196.195.22:80 check
 EOT
+sudo service haproxy restart
