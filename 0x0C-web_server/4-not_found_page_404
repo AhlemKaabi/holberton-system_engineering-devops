@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# command line to intall nginx & redirect to 301!
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "Holberton School" | sudo tee /var/www/html/index.nginx-debian.html
+sudo service nginx start
+sudo sed -i '18 a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+sudo touch /var/www/html/error404.html
+echo "Ceci n'est pas une page" > /var/www/html/error404.html
+sudo sed -i '19 a error_page 404 /error404.html;' /etc/nginx/sites-available/default
+sudo service nginx restart
+sudo service nginx reload
