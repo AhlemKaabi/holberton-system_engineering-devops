@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# add a custom Nginx response header. 
+sudo sed -i '11 a add_header X-Served-By $hostname always;' /etc/nginx/nginx.conf
+sudo service nginx restart
+sudo service nginx reload
