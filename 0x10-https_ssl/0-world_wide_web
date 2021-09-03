@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Bash script that will display information about subdomains.
+# # shellcheck disable=SC2086
+
+domain = $1;
+subdomain = $2;
+
+echo "The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]"
+func () {
+
+}
