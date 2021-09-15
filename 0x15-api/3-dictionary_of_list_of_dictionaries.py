@@ -5,7 +5,8 @@ import requests
 
 
 if __name__ == "__main__":
-    users = requests.get("https://jsonplaceholder.typicode.com/users").json()
+    users = requests.get("https://jsonplaceholder.typicode.com/users",
+                         verify=False).json()
     userdict = {}
     usernamedict = {}
     for user in users:
@@ -13,7 +14,8 @@ if __name__ == "__main__":
         userdict[uid] = []
         usernamedict[uid] = user.get("username")
     todos = requests.get(
-        "https://jsonplaceholder.typicode.com/todos").json()
+        "https://jsonplaceholder.typicode.com/todos",
+        verify=False).json()
     for todo in todos:
         taskdict = {}
         uid = todo.get("userId")
