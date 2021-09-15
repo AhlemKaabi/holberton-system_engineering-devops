@@ -19,13 +19,14 @@ if __name__ == "__main__":
         all_data = {}
         data_list = []
         for todo in user_todos:
+            print(todo)
             data = {}
             data['task'] = todo.get('title')
             data['completed'] = todo.get('completed')
             data['username'] = username
             data_list.append(data)
-        data[user_id] = data_list
+        all_data[user_id] = data_list
         with open(file_name, 'w', encoding='utf-8') as f:
-            json.dump(data, f)
+            json.dump(all_data, f)
     except ValueError:
         exit()
