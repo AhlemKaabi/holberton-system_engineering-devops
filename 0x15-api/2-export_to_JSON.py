@@ -12,9 +12,9 @@ if __name__ == "__main__":
             user_id)
         response = requests.get(url_info).json()
         username = response.get("username")
-        url_todo = "https://jsonplaceholder.typicode.com/users/{}/todos".format(
+        urltodo = "https://jsonplaceholder.typicode.com/users/{}/todos".format(
             user_id)
-        user_todos = requests.get(url_todo).json()
+        user_todos = requests.get(urltodo).json()
         file_name = "{}.json".format(user_id)
         all_data = {}
         data_list = []
